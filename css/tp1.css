@@ -1,0 +1,30 @@
+body{
+    font-family: Helvetica,san-serif;
+}
+
+h1{
+    text-align: center;
+    color: red;
+}
+
+h2{
+    text-decoration: underline;
+}
+
+section>h2{
+    color: green;
+}
+
+article>h2{
+    color: blue;
+}
+
+h2 + p{
+    color: red;
+    font-style: italic;
+}
+
+h1 ~ p{
+    color: purple;
+}
+

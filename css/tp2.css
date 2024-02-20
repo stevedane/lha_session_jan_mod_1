@@ -1,0 +1,42 @@
+form{
+    font-family: Helvetica, sans-serif;
+    width: 400px;
+    margin: auto;
+
+}
+
+input[class="form-control"]:focus{
+    border-color: red;
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 7px;
+}
+
+input:focus, input:active{
+    border: 2px dashed red !important;
+}
+
+label{
+    width: 100px;
+}
+
+#btn-submit{
+    width: 400px;
+    text-align: center;
+    font-weight: bold;
+    background-color: green;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
