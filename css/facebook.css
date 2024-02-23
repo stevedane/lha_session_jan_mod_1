@@ -13,7 +13,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
 }
 body{
     background: var(--body)!important;
@@ -44,7 +44,7 @@ body{
 .page-description{
     font-size: 28px;
     display: inline;
-    font-family: SFProDisplay-Regular, Helvetica, Arial, sans-serif;
+    font-family: 'SF Pro Display', sans-serif;
     font-weight: normal;
     line-height: 32px;
     width: 500px;
@@ -80,7 +80,8 @@ body{
     line-height: 1.34;
     border-top: none;
     color: var(--text-init);
-    font-family: SFProText-Regular, Helvetica, Arial, sans-serif;
+    /* font-family: SFProText-Regular, Helvetica, Arial, sans-serif; */
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 14px;
     font-weight: normal;
     margin-top: 28px;
@@ -88,7 +89,8 @@ body{
 }
 
 .footer-form-container a{
-    font-family: SFProText-Semibold, Helvetica, Arial, sans-serif;
+    /* font-family: SFProText-Semibold, Helvetica, Arial, sans-serif; */
+    font-family: 'SF Pro Display', sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: black;
