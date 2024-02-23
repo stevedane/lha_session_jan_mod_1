@@ -22,23 +22,47 @@
             <div class="col form-content">
                 <div class="form-container">
                     <form action="#" id="login-form">
-                        <input class="p-5 br-5" type="text" name="username" id="username"
-                            placeholder="Adresse e-mail ou numéro de tel.">
-                        <input class="p-5 br-5" type="password" name="password" id="password"
-                            placeholder="Mot de passe">
-                        <input class="br-5 p-5" type="submit" value="Se connecter">
-                        <hr>
-                        <a href="#">Mot de passe oublié ?</a>
-                        <a href="#" class="br-5">Créer nouveau compte</a>
+                        <div class="input-box">
+                            <div class="form-control">
+                                <input 
+                                    class="p-5 br-5 no-shadow" 
+                                    type="text" 
+                                    name="username" 
+                                    id="username"
+                                    placeholder="Adresse e-mail ou numéro de tel."
+                                >
+                            </div>
+                            <div class="form-control">
+                                <input
+                                    class="p-5 br-5 no-shadow"
+                                    type="password"
+                                    name="password"
+                                    id="password"
+                                    placeholder="Mot de passe"
+                                >
+                            </div>
+                        </div>
+                        <div class="form-control">
+                            <input  
+                                class="br-5 p-5 btn btn-primary" 
+                                type="submit" 
+                                value="Se connecter"
+                            >
+                        </div>
+                        <div class="wrapper-forgot">
+                            <a class="forgot-password" href="#">Mot de passe oublié ?</a>
+                        </div>
+                        
+                        <div class="separator"></div>
+                        <div class="wrapper">
+                            <button type="button" class="new-account">Créer nouveau compte</button>
+                        </div>
                     </form>
-
+                </div>
+                <div class="footer-form-container">
+                    <a href="#">Créer une page</a> pour une célébrité, une marque ou une entreprise.
                 </div>
             </div>
-        </div>
-        <div class="row">
-            <p>
-                <a href="#">Créer une page</a> pour une célébrité, une marque ou une entreprise.
-            </p>
         </div>
     </div>
 </body>
