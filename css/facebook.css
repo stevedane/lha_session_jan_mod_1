@@ -1,68 +1,166 @@
+:root{
+    --primary: #0866ff;
+    --primary-hover: #1877f2;
+    --info: #3dc023;
+    --info-hover: #36a420;
+    --body:#f0f2f5;
+    --white: #fff;
+    --text-init: #1c1e21;
+    --lightgray-separator: #dadde1;
+}
+
 *{
     padding: 0;
     margin: 0;
-    font-family: Helvetica;
+    box-sizing: border-box;
+    font-family: 'SF Pro Display', sans-serif;
 }
+body{
+    background: var(--body)!important;
+}
+
+.container, .separator, .wrapper, #login-form,.page-content,  .row{display: flex}
+
 .container{
-    height: auto;
-    border:1px solid yellow;
-    background-color: #f0f2f5;
+    border: none !important;
+    height: 100vh;
 }
 
 .row{
-    border:1px solid red;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 3.5em;
-    padding:15% 10% 15% 10%;
+    border: none !important;
+    margin: auto 0;
+    width: 100%;
 }
 
+.row, #login-form, .wrapper{justify-content: center}
+
 .page-title{
-    color: #0866ff;
+    color: var(--primary);
     font-size: 3.5em;
     margin-bottom: 10px;
+    padding: 80px 0 1px;
 }
 
 .page-description{
     font-size: 28px;
     display: inline;
+    font-family: 'SF Pro Display', sans-serif;
+    font-weight: normal;
+    line-height: 32px;
+    width: 500px;
 }
 
 #login-form{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center ;
     margin: auto;
-    gap: 18px;
+    gap: 5px;
 }
+
+#login-form, .separator, .wrapper{align-items: center}
 
 .page-content{
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 30%;
+    width: 580px;
+    height: fit-content;
 }
 
-.w-100{
-    width: 100%;
-}
-
-.p-5{
-    padding: 15px;
-}
-
-.br-5{
-    border-radius: 5px;
-}
-.form-content{
-    width: 35%;
-}
+.form-content{width: 396px;}
 
 .form-container{
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: white;
+    background-color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+    background-color: var(--white);
     padding: 16px;
 }
+
+.footer-form-container{
+    direction: ltr;
+    line-height: 1.34;
+    border-top: none;
+    color: var(--text-init);
+    /* font-family: SFProText-Regular, Helvetica, Arial, sans-serif; */
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin-top: 28px;
+    text-align: center;
+}
+
+.footer-form-container a{
+    /* font-family: SFProText-Semibold, Helvetica, Arial, sans-serif; */
+    font-family: 'SF Pro Display', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: black;
+}
+.footer-form-container a:hover, .forgot-password:hover{text-decoration: underline;}
+
+/* ------------------------------------ */
+.input-box, .input-box input, .input-box + .form-control, .btn-primary, .wrapper, .separator, .wrapper-forgot{width: 100%;}
+
+.form-control{
+    padding: 5px 0;
+}
+
+input:not(input[type='submit']){
+    outline: none!important;
+    height: 52px!important;
+    box-shadow: none;
+    border: 1px solid #dddfe2;
+    color: var(--text-init);
+    font-size: 17px;
+    padding: 14px 16px;
+    border-radius: 6px;
+}
+input:focus:not(input[type='submit']){
+    border-color: var(--primary);
+}
+
+.btn-primary, .new-account{
+    border-radius: 6px;
+    font-size: 17px;
+    line-height: 48px;
+    padding: 0 16px;
+    cursor: pointer;
+    display: inline-block;
+    white-space: nowrap;
+    color: var(--white);
+    outline: none;
+    border: none;
+    font-weight: bolder!important;
+}
+.btn-primary{
+    cursor: pointer;
+    background-color:var(--primary);
+    height: 48px!important;
+    border-color: var(--primary);
+}
+
+.btn-primary:hover{background-color: var(--primary-hover);}
+
+.forgot-password, .new-account, .footer-form-container a{text-decoration: none;}
+
+.wrapper-forgot{
+    display: block;
+    text-align: center;
+}
+
+.forgot-password{
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.separator{
+    border-bottom: 1px solid var(--lightgray-separator);
+    margin: 20px 16px;
+    text-align: center;
+}
+.new-account{
+    background-color:var(--info);
+    border-color: var(--info);
+}
+
+.new-account:hover{background-color: var(--info-hover);}
